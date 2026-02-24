@@ -19,7 +19,14 @@ section, .section, .card, .container {
 * {
     max-margin-top: 48px;
 }
-</style>
+
+      /* Constrain event images inside cards (prevents giant images on mobile) */
+      .img-shell{width:100%; border-radius:18px; overflow:hidden; margin:0 0 14px 0; box-shadow: 0 10px 30px rgba(0,0,0,.06);}
+      .img-shell img{width:100%; height:210px; object-fit:cover; display:block;}
+      @media (max-width:420px){
+        .img-shell img{height:200px;}
+      }
+    </style>
 
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
@@ -454,7 +461,7 @@ section, .section, .card, .container {
         
 <div class="card">
   <div class="img" style="height:auto;border-style:solid;border-color:rgba(15,23,42,.10);">
-    <img src="972.jpg" alt="Purim In The Spotlight flyer" style="width:100%;height:auto;display:block;border-radius:18px;">
+    <img src="972.jpeg" alt="Purim In The Spotlight flyer" style="width:100%;height:auto;display:block;border-radius:18px;">
   </div>
 
   <div class="label-row">
@@ -557,8 +564,7 @@ section, .section, .card, .container {
 
             <div class="btn-row">
                 <a class="btn" href="https://pin.it/2ui8vbRsm" target="_blank" rel="noopener">RSVP</a>
-                <a class="btn ghost" href="https://pin.it/2ui8vbRsm" target="_blank" rel="noopener">Moodboard</a>
-            </div>
+</div>
         </div>
     </div>
 </section>
@@ -581,9 +587,8 @@ section, .section, .card, .container {
               This will be a special <strong>LA Jewish Events co‑sponsored</strong> night — more details to come 👀
              <strong>Details to follow 😎</strong></p>
             <div class="btns">
-              <a class="btn primary" href="https://www.instagram.com/gabriellaacohen" target="_blank" rel="noopener">Follow Gabriella</a>
-              <a class="btn ghost" href="https://www.instagram.com/gabriellaacohen" target="_blank" rel="noopener">@gabriellaacohen</a>
-            </div>
+        <a class="btn primary" href="https://luma.com/m2vptfp4" target="_blank" rel="noopener">RSVP</a>
+</div>
           </div>
         </div>
       </div>
@@ -707,7 +712,7 @@ Birthright interest — Summer</h3>
           Every contribution helps keep the calendar current and the community growing.
         </p>
         <div class="btns">
-          <a class="btn primary" href="https://givebutter.com/laj-infrastructure-campaign-yxm8je" target="_blank" rel="noopener">Donate</a>
+          <a class="btn primary" href="https://buy.stripe.com/aFa5kv5hQfmR2r8cxf8og00" target="_blank" rel="noopener">Donate</a>
           <a class="btn ghost" href="mailto:lajevents.inbox@gmail.com?subject=Sponsorship">Sponsorship</a>
         </div>
       </div>
